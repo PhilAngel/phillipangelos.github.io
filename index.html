@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phillip Angelos</title>
-    <!-- Add Spectral font -->
+    
     <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -84,8 +84,8 @@
         }
 
         .phil-photo {
-            width: 300px;  /* Doubled the size */
-            height: 300px; /* Doubled the size */
+            width: 300px;  
+            height: 300px; 
             border-radius: 50%;
             margin-bottom: 2.5rem;
             object-fit: cover;
@@ -115,6 +115,38 @@
         .section-content {
             max-width: 800px;
             margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .research-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            text-align: justify;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
         }
 
         .fade-bottom {
@@ -149,17 +181,28 @@
 
     <section id="research">
         <div class="section-content">
-            <h2>Research</h2>
-            <!-- Add your research content here -->
-            <p>Your research content goes here...</p>
+            <h2 class="section-title">Research</h2>
+            <div class="research-text">
+                <p>I am interested in the intersection of artificial intelligence and psychological/medical research. More specifically, the application of methodologies such as deep learning and generative AI. I plan to implement and improve upon these methodologies to develop better software to increase translational value and bridge theoretical insights through machine learning.</p>
+                <p style="margin-top: 1.5rem">My research is deeply rooted in understanding human decision-making processes and behavioral patterns, exploring how these insights can enhance the development and application of AI systems in healthcare and psychological research.</p>
+            </div>
         </div>
     </section>
 
     <section id="contact">
         <div class="section-content">
-            <h2>Contact</h2>
-            <!-- Add your contact content here -->
-            <p>Your contact information goes here...</p>
+            <h2 class="section-title">Contact</h2>
+            <div class="social-links">
+                <a href="https://x.com/PhillipAngelos" target="_blank">
+                    <img src="website_images/twitterpng.png" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://github.com/PhilAngel" target="_blank">
+                    <img src="website_images/github.png" alt="GitHub" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/phillipangelos/" target="_blank">
+                    <img src="website_images/317750_linkedin_icon.png" alt="LinkedIn" class="social-icon">
+                </a>
+            </div>
         </div>
     </section>
 
