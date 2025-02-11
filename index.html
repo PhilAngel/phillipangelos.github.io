@@ -49,6 +49,7 @@
             width: 100%;
             padding: 1.5rem 0;
             z-index: 1000;
+            transition: all 0.3s ease-in-out;
         }
 
         .nav-links {
@@ -228,6 +229,25 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        let lastScrollTop = 0;
+        const nav = document.querySelector('nav');
+        
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down
+                nav.style.opacity = '0';
+                nav.style.transform = 'translateY(-100%)';
+            } else {
+                // Scrolling up
+                nav.style.opacity = '1';
+                nav.style.transform = 'translateY(0)';
+            }
+            
+            lastScrollTop = scrollTop;
         });
     </script>
 </body>
