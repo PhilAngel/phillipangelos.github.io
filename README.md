@@ -1,2 +1,2 @@
 # phillipangelos.github.io
-Working on a website
+Made a website, will continue to update this.
